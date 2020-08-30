@@ -14,13 +14,13 @@ namespace Catalog.Persistence.Database.Configuration
             var random = new Random();
             var products = new List<ProductInStock>();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 1; i < 100; i++)
             {
                 products.Add(new ProductInStock
                 {
                     ProductInStockId = i,
                     ProductId = i,
-                    Stock = random.Next(0, 100)
+                    Stock = random.Next(0, 20)
                 });
             }
 
