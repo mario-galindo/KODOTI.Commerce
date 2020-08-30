@@ -17,6 +17,9 @@ namespace Catalog.Persistence.Database
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.HasDefaultSchema("Catalog");
+
             ModelConfig(builder);
         }
 
